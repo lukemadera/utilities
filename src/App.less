@@ -1,0 +1,19 @@
+@import './styles/colors.less';
+
+@headerHeight: 25px;
+
+.app-header {
+    position: fixed;
+    height: @headerHeight;
+    width: 100%;
+    background-color: @grayLighter;
+    border-bottom: solid 1px @grayLight;
+
+    >div {
+        text-align: center;
+        padding-top: 3px;
+    }
+}
+.app-content {
+    padding-top: @headerHeight + 1;
+}
